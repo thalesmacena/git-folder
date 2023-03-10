@@ -1,0 +1,44 @@
+{
+  "name": "git-services",
+  "version": "1.0.0",
+  "description": "Node CLI to manage multiple repositories of a microservices architecture",
+  "author": "Thales Macena, ChatGPT",
+  "license": "MIT",
+  "preferGlobal": true,
+  "main": "dist/index.js",
+  "keywords": [
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalesmacena/git-services.git"
+  },
+  "homepage": "https://github.com/thalesmacena/git-services#readme",
+  "bugs": {
+    "url": "https://github.com/thalesmacena/git-services/issues"
+  },
+  "bin": {
+    "git-s": "./dist/index.js",
+    "git-services": "./dist/index.js",
+    "gits": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn bin/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^10.0.0",
+    "figlet": "^1.5.2",
+    "require-all": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.5",
+    "@types/node": "^18.14.1",
+    "@types/require-all": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}
