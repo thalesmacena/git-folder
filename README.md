@@ -1,5 +1,3 @@
-- [Teste](#teste)
-
 # About
 A simple multifolder git cli, call git-s or gits
 
